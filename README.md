@@ -1,9 +1,11 @@
 # watermark-images
 使用python脚本为图片添加水印
+
 欢迎PR!
 
 Adding watermarks to images using python scripts
-Welcome to pull requests!!
+
+Welcome to pull requests!
 
 # 基本用法
 需要安装库
