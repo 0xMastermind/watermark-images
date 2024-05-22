@@ -1,25 +1,21 @@
 # watermark-images
-此python脚本仅适用于为图片添加水印
-
-此脚本的作用是将指定的水印（图像或文本）添加到一个目录中的所有图像上，并保存处理后的图像。它遍历给定目录中的所有图像文件，对每个图像添加水印，并根据用户的选择保存到原目录或新指定的目录中，保留原有的目录结构。
-
-具体功能包括：
-
-加载和处理水印图像：包括调整透明度和大小。
-
-遍历目录中的图像文件：跳过与水印图像名称相同的文件。
-
-在图像上添加水印：可以是图像水印、文本水印或同时添加。
-
-保存处理后的图像：支持保存为JPEG或PNG格式，并保留图像的原始DPI信息。
-
-欢迎PR!
-
 Adding watermarks to images using python scripts
 
-Welcome to pull requests!
+This python script is only for adding watermarks to images
 
-🥰
+What this script does is to add a specified watermark (image or text) to all images in a directory and save the processed images. It iterates through all the image files in a given directory, adds a watermark to each image, and saves it to the original directory or a newly specified directory according to the user's choice, preserving the original directory structure.
+
+Specific features include:
+
+Load and process watermarked images: including adjusting transparency and size.
+
+Iterate over image files in the directory: skip files with the same name as the watermarked image.
+
+Add watermark to image: can be image watermark, text watermark or both.
+
+Save processed image: supports saving as JPEG or PNG format and retains the original DPI information of the image.
+
+Welcome to pull requests!🥰
 
 # 基本用法
 需要安装库
