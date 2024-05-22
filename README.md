@@ -67,7 +67,11 @@ python watermark_script.py ./images --text "Sample Watermark" --fontsize 50 --te
 python watermark_script.py ./images ./logo.png --text "Sample Watermark" --pos topleft --padding 10 --scale 15 --text_opacity 0.8 --fontsize 40 --font ./path/to/font.ttf
 ```
 #注意事项
+
 确保字体文件路径（`--font`）有效且存在。
+
 如果添加的水印图像路径（`WatermarkLogoPath`）与源目录中的图像名称冲突，脚本会跳过该图像。
+
 如果未指定`--new_dir`，源目录中的原始图像将被覆盖。
+
 该脚本支持JPEG、PNG、TIFF格式的图像。
