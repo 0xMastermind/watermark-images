@@ -53,7 +53,7 @@ python watermark_script.py SourceDirectory WatermarkLogoPath --text "Your Waterm
 
 `--text_opacity TEXT_OPACITY`：文字水印的不透明度（0.0 到 1.0）。默认值为1.0（完全不透明）。
 
-#示例用法
+# 示例用法
 为图像添加全透明度的图像水印，放置在右下角，缩放为图像宽度的10%
 ```python
 python watermark_script.py ./images ./logo.png --pos bottomright --scale 10
