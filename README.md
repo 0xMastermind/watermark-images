@@ -7,6 +7,8 @@ Adding watermarks to images using python scripts
 
 Welcome to pull requests!
 
+🥰
+
 # 基本用法
 需要安装库
 ```bash
