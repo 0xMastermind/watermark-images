@@ -52,3 +52,22 @@ python watermark_script.py SourceDirectory WatermarkLogoPath --text "Your Waterm
 `--fontsize FONT_SIZE`：文字水印的字体大小。默认值为36。
 
 `--text_opacity TEXT_OPACITY`：文字水印的不透明度（0.0 到 1.0）。默认值为1.0（完全不透明）。
+
+#示例用法
+为图像添加全透明度的图像水印，放置在右下角，缩放为图像宽度的10%
+```python
+python watermark_script.py ./images ./logo.png --pos bottomright --scale 10
+```
+为图像添加半透明度的文字水印，放置在图像中央，字体大小为50
+```python
+python watermark_script.py ./images --text "Sample Watermark" --fontsize 50 --text_opacity 0.5
+```
+为图像同时添加图像和文字水印，图像水印放置在左上角，文字水印放置在右下角
+```python
+python watermark_script.py ./images ./logo.png --text "Sample Watermark" --pos topleft --padding 10 --scale 15 --text_opacity 0.8 --fontsize 40 --font ./path/to/font.ttf
+```
+#注意事项
+确保字体文件路径（`--font`）有效且存在。
+如果添加的水印图像路径（`WatermarkLogoPath`）与源目录中的图像名称冲突，脚本会跳过该图像。
+如果未指定`--new_dir`，源目录中的原始图像将被覆盖。
+该脚本支持JPEG、PNG、TIFF格式的图像。
